@@ -1,4 +1,8 @@
 {
+  "usingComponents": {
+    "product-list-card": "components/product_list_card/product_list_card",
+    "nav-bar": "components/nav_bar/nav_bar"
+  },
   "pages":[
     "pages/index/index",
     "pages/logs/logs"
@@ -18,23 +22,23 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/icon_1.png",
-        "selectedIconPath": "images/icon_1_active.png"
+        "iconPath": "images/tab_icon_0.png",
+        "selectedIconPath": "images/tab_icon_0_active.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "images/tab_2_normal.png",
-        "selectedIconPath": "images/tab_2_selected.png"
+        "iconPath": "images/tab_icon_1.png",
+        "selectedIconPath": "images/tab_icon_1_active.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "images/tab_1_normal.png",
-        "selectedIconPath": "images/tab_1_selected.png"
+        "iconPath": "images/tab_icon_2.png",
+        "selectedIconPath": "images/tab_icon_2_active.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "images/tab_3_normal.png",
-        "selectedIconPath": "images/tab_3_selected.png"
+        "iconPath": "images/tab_icon_3.png",
+        "selectedIconPath": "images/tab_icon_3_active.png"
       }
     ]
   }

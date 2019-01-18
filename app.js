@@ -3,8 +3,20 @@ import globalData from './globalData';
 //app.js
 App({
   onLaunch() {
-    const p = Promise.resolve(123);
-    p.then(r => console.log(r));
+    const systemInfo = wx.getSystemInfoSync();
+    const pages = getCurrentPages();
+    const menuButton = wx.getMenuButtonBoundingClientRect();
+    console.error(systemInfo)
+    console.error(pages)
+    console.error(menuButton)
+    // wx.setNavigationBarColor({
+    //   frontColor: '#ffffff',
+    //   backgroundColor: '#ff0000',
+    //   animation: {
+    //     duration: 400,
+    //     timingFunc: 'easeIn'
+    //   }
+    // });
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || [];
     logs.unshift(Date.now());
