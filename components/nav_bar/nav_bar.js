@@ -8,16 +8,16 @@ Component({
   data: {
     statusBarHeight: wx.getSystemInfoSync().statusBarHeight,
   },
-  created() {
+  attached() {
     // const pages = getCurrentPages();
-    const {top, bottom, left} = wx.getMenuButtonBoundingClientRect();
+    const {top, left, height} = wx.getMenuButtonBoundingClientRect();
     const {statusBarHeight} = wx.getSystemInfoSync();
-
     this.setData({
       statusBarHeight,
-      barContentHeight: top - statusBarHeight + bottom,
+      barContentHeight: (top - statusBarHeight) * 2 + height,
       barContentLeft: left,
     });
+    console.error(this.data.barContentHeight)
   },
   methods: {
 

@@ -1,8 +1,10 @@
+/*组件无法用到公用样式*/
+@import "../../font/iconfont.wxss";
+
 .nav-bar {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 90rpx;
   display: flex;
   align-items: center;
   background-color: #fff;

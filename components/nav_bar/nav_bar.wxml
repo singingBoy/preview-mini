@@ -1,8 +1,11 @@
 <block>
-    <view class="nav-bar" style="padding-top: {{statusBarHeight}}px">
-        <view class="nav-bar-left">left</view>
-        <view class="nav-bar-center">center</view>
-        <view class="nav-bar-right">right</view>
+    <view class="nav-bar" style="padding-top: {{statusBarHeight}}px; height: {{barContentHeight}}px; width: {{barContentLeft}}px">
+        <view class="nav-bar-left">
+            <slot name="left"></slot>
+        </view>
+        <view class="nav-bar-center">
+            <slot name="center"></slot>
+        </view>
     </view>
     <view class="nav-bar-cover" style="height: {{barContentHeight + statusBarHeight}}px"/>
 </block>
