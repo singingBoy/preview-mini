@@ -13,11 +13,23 @@
             bindchange="onChange"
         >
             <block wx:for="{{images}}" wx:key="*this">
-                <swiper-item class="{{current === index ? 'item-active' : 'item-no-active'}}">
-                    <image class="pro-image {{current === index ? 'active' : 'no-active'}}" mode="scaleToFill" lazy-load="{{true}}" src="{{item}}"/>
+                <swiper-item>
+                    <view class="image-wrapper {{current === index ? 'active' : 'no-active'}}">
+                        <image class="pro-image"
+                               mode="scaleToFill"
+                               lazy-load="{{true}}"
+                               src="{{item}}"
+                        />
+                        <view class="no-active-cover" hidden="{{current === index}}"/>
+                    </view>
                 </swiper-item>
             </block>
         </swiper>
-        <view></view>
+        <view class="pro-footer">
+            <view>
+                <text class="iconfont icon-attentionfavorfill eye-icon"> 5902人看过</text>
+                <text class="iconfont taste-icon">4690人尝鲜</text>
+            </view>
+        </view>
     </view>
 </block>
