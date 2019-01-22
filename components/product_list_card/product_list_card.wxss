@@ -1,0 +1,43 @@
+.pro-card{
+  background-color: #ffffff;
+  padding: 25rpx 0;
+}
+.pro-title {
+  font-size: 28rpx;
+  color: #2A2A2A;
+  line-height: 44rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  padding: 0 30rpx;
+}
+
+.pro-subtitle {
+  font-size: 26rpx;
+  color: #676767;
+  line-height: 42rpx;
+  margin-bottom: 20rpx;
+  padding: 0 30rpx;
+}
+
+swiper {
+  height: 240rpx;
+}
+
+image {
+  height: 240rpx;
+  width: 100%;
+  transition: all 1s;
+}
+
+.pro-image {
+  border-radius: 8rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, .5);
+}
+
+.pro-image.active {
+  transform: scale(1);
+}
+
+.pro-image.no-active {
+  transform: scale(.5);
+}

@@ -1,20 +1,23 @@
 <block>
-    <view>
-        <view>一盏灯，提升你的家装档次</view>
-        <view>这种好看又万能的厨具，谁不喜欢呢？年末大扫除必备神器</view>
+    <view class="pro-card">
+        <view class="pro-title">一盏灯，提升你的家装档次</view>
+        <view class="pro-subtitle">这种好看又万能的厨具，谁不喜欢呢？年末大扫除必备神器</view>
         <swiper
-                indicator-dots="{{false}}"
-                autoplay="{{false}}"
-                current="{{5}}"
-                circular="{{true}}"
-                previous-margin="{{50}}"
-                next-margin="{{25}}"
+            indicator-dots="{{false}}"
+            autoplay="{{false}}"
+            current="{{3}}"
+            circular="{{true}}"
+            previous-margin="{{100}}"
+            next-margin="{{100}}"
+            skip-hidden-item-layout="{{true}}"
+            bindchange="onChange"
         >
-            <block wx:for="{{images}}">
-                <swiper-item>
-                    <image mode="scaleToFill" src="{{item}}" class="slide-image" width="355" height="150" />
+            <block wx:for="{{images}}" wx:key="*this">
+                <swiper-item class="{{current === index ? 'item-active' : 'item-no-active'}}">
+                    <image class="pro-image {{current === index ? 'active' : 'no-active'}}" mode="scaleToFill" lazy-load="{{true}}" src="{{item}}"/>
                 </swiper-item>
             </block>
         </swiper>
+        <view></view>
     </view>
 </block>
