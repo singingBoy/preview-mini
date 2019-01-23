@@ -14,7 +14,7 @@
         >
             <block wx:for="{{images}}" wx:key="*this">
                 <swiper-item>
-                    <view class="image-wrapper {{current === index ? 'active' : 'no-active'}}">
+                    <view class="d-flex image-wrapper {{current === index ? 'active' : 'no-active'}}">
                         <image class="pro-image"
                                mode="scaleToFill"
                                lazy-load="{{true}}"
@@ -26,10 +26,21 @@
             </block>
         </swiper>
         <view class="pro-footer">
-            <view>
-                <text class="iconfont icon-attentionfavorfill eye-icon"> 5902人看过</text>
-                <text class="iconfont taste-icon">4690人尝鲜</text>
+            <view class="pro-statics d-flex">
+                <view>
+                    <text class="iconfont icon-attentionfavorfill"> 5902人看过</text>
+                    <text class="iconfont taste-icon">4690人尝鲜</text>
+                </view>
+                <view class="d-flex price-wrapper">
+                    <text class="iconfont icon-yuan-cn">
+                        <text class="pro-price">99</text>
+                    </text>
+                    <view>
+                        <text class="vip-label">会员优惠 20</text>
+                    </view>
+                </view>
             </view>
+            <view></view>
         </view>
     </view>
 </block>

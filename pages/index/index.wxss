@@ -1,0 +1,43 @@
+/* banner */
+swiper{
+  height: 500rpx;
+}
+.banner-img{
+  width: 100%;
+  height: 500rpx;
+}
+.banner-dots{
+  position: absolute;
+  bottom: 24rpx;
+  right: 30rpx;
+}
+.dot-item {
+  width: 8rpx;
+  height: 8rpx;
+  background: rgba(255,255,255,.5);
+  border-radius: 4px;
+  margin-right: 8rpx;
+}
+.dot-item:last-child {
+  margin-right: 0;
+}
+.dot-active {
+  width: 22rpx;
+  background-color: #E41919;
+}
+
+/* 导航栏 */
+.guide-wrapper{
+  display: flex;
+  padding: 20rpx 30rpx;
+}
+.guide-item{
+  width: 50%;
+  height: 350rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.guide-item-1 {
+  background: radial-gradient(#f5f5f5, #FFF1F1);
+}
+

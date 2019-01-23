@@ -1,13 +1,4 @@
 @font-face {
-  font-family: 'iconfont';  /* project id 1027770 */
-  src: url('//at.alicdn.com/t/font_1027770_gg6cpt4qhis.eot');
-  src: url('//at.alicdn.com/t/font_1027770_gg6cpt4qhis.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1027770_gg6cpt4qhis.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1027770_gg6cpt4qhis.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1027770_gg6cpt4qhis.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1027770_gg6cpt4qhis.svg#iconfont') format('svg');
-}
-@font-face {
   font-family: 'ArialBlack';
   font-weight: normal;
   font-style: normal;
@@ -27,13 +18,24 @@
   url("https://res.suv666.com/carhouse/tuner/Gobold5.svg#Gobold") format("svg");
   /* iOS 4.1- */
 }
-
+@font-face {
+  font-family: 'iconfont';  /* project id 1027770 */
+  src: url('//at.alicdn.com/t/font_1027770_uxriujnig09.eot');
+  src: url('//at.alicdn.com/t/font_1027770_uxriujnig09.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1027770_uxriujnig09.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1027770_uxriujnig09.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1027770_uxriujnig09.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1027770_uxriujnig09.svg#iconfont') format('svg');
+}
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-yuan-cn:before {
+  content: "\e617";
 }
 
 .icon-check:before {

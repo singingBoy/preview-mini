@@ -21,26 +21,25 @@
   padding: 0 30rpx;
 }
 
-swiper {
+.pro-card swiper {
   height: 240rpx;
 }
 
-image {
+.pro-card image {
   height: 240rpx;
   width: 100%;
 }
 
-.image-wrapper{
+.pro-card .image-wrapper{
   position: relative;
   transition: all .5s;
-  display: flex;
 }
 
-.active {
+.pro-card .active {
   transform: scale(1);
 }
 
-.no-active {
+.pro-card .no-active {
   transform: scale(.8);
   box-shadow: 0 0 20rpx rgba(0, 0, 0, .5);
 }
@@ -49,7 +48,7 @@ image {
   border-radius: 8rpx;
 }
 
-.no-active-cover{
+.pro-card .no-active-cover{
   position: absolute;
   top: 0;
   left: 0;
@@ -59,25 +58,55 @@ image {
 }
 
 .pro-footer{
-  padding: 15rpx 30rpx;
+  padding: 20rpx 30rpx;
 }
 
-.eye-icon{
+.pro-statics{
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.pro-card .icon-attentionfavorfill{
   color: #B0B0B0;
   font-size: 22rpx;
 }
-.taste-icon{
+.pro-card .taste-icon{
   color: #2A2A2A;
   font-size: 22rpx;
   margin-left: 15rpx;
 }
-.taste-icon::before{
+.pro-card .taste-icon::before{
   content: '';
   display: inline-block;
-  width: 18rpx;
-  height: 18rpx;
+  width: 22rpx;
+  height: 22rpx;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTQ4MTc1NTk0MzIzIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjIxMzY3IiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTU4NS4xNDI4NTcgMEMzNDMuNzcxNDI5IDAgMTQ2LjI4NTcxNCAxOTcuNDg1NzE0IDE0Ni4yODU3MTQgNDQxLjI5NTIzOGMwIDExOS40NjY2NjcgNDYuMzIzODEgMjI2Ljc0Mjg1NyAxMjEuOTA0NzYyIDMwNy4yLTIxLjk0Mjg1NyA1My42MzgwOTUtMzkuMDA5NTI0IDEwOS43MTQyODYtNTEuMiAxNTguNDc2MTkxLTE0LjYyODU3MSA1OC41MTQyODYgMjkuMjU3MTQzIDExNy4wMjg1NzEgOTAuMjA5NTI0IDExNy4wMjg1NzFoNTU1Ljg4NTcxNGM2MC45NTIzODEgMCAxMDQuODM4MDk1LTU4LjUxNDI4NiA5MC4yMDk1MjQtMTE3LjAyODU3MS0xMi4xOTA0NzYtNDguNzYxOTA1LTI5LjI1NzE0My0xMDQuODM4MDk1LTUxLjItMTU4LjQ3NjE5MSA3NS41ODA5NTItODAuNDU3MTQzIDEyMS45MDQ3NjItMTg3LjczMzMzMyAxMjEuOTA0NzYyLTMwNy4yQzEwMjQgMTk3LjQ4NTcxNCA4MjYuNTE0Mjg2IDAgNTg1LjE0Mjg1NyAweiIgZmlsbD0iI0ZGQTNBQiIgcC1pZD0iMjEzNjgiPjwvcGF0aD48cGF0aCBkPSJNNTg1LjE0Mjg1NyA2NTAuOTcxNDI5YzgwLjQ1NzE0MyAwIDE0OC43MjM4MS01MS4yIDE3NS41NDI4NTctMTI0LjM0Mjg1OCA5Ljc1MjM4MS0yOS4yNTcxNDMtMTIuMTkwNDc2LTYwLjk1MjM4MS00My44ODU3MTQtNjAuOTUyMzgxSDQ1My40ODU3MTRjLTMxLjY5NTIzOCAwLTUzLjYzODA5NSAzMS42OTUyMzgtNDMuODg1NzE0IDYwLjk1MjM4MSAyNi44MTkwNDggNzMuMTQyODU3IDk1LjA4NTcxNCAxMjQuMzQyODU3IDE3NS41NDI4NTcgMTI0LjM0Mjg1OHoiIGZpbGw9IiNGRkZGRkYiIHAtaWQ9IjIxMzY5Ij48L3BhdGg+PHBhdGggZD0iTTQwMi4yODU3MTQgOTcuNTIzODFDMTgwLjQxOTA0OCA5Ny41MjM4MSAwIDI3NS41MDQ3NjIgMCA0OTcuMzcxNDI5YzAgMTA3LjI3NjE5IDQzLjg4NTcxNCAyMDQuOCAxMTIuMTUyMzgxIDI3Ny45NDI4NTctMTkuNTA0NzYyIDQ4Ljc2MTkwNS0zNC4xMzMzMzMgOTkuOTYxOTA1LTQ2LjMyMzgxIDE0My44NDc2MTktMTIuMTkwNDc2IDUzLjYzODA5NSAyNi44MTkwNDggMTA0LjgzODA5NSA4Mi44OTUyMzkgMTA0LjgzODA5NWg1MDcuMTIzODA5YzU2LjA3NjE5IDAgOTUuMDg1NzE0LTUxLjIgODIuODk1MjM4LTEwNC44MzgwOTUtMTIuMTkwNDc2LTQzLjg4NTcxNC0yNi44MTkwNDgtOTUuMDg1NzE0LTQ2LjMyMzgwOS0xNDMuODQ3NjE5IDcwLjcwNDc2Mi03My4xNDI4NTcgMTEyLjE1MjM4MS0xNzAuNjY2NjY3IDExMi4xNTIzODEtMjc3Ljk0Mjg1N0M4MDQuNTcxNDI5IDI3NS41MDQ3NjIgNjI0LjE1MjM4MSA5Ny41MjM4MSA0MDIuMjg1NzE0IDk3LjUyMzgxeiIgZmlsbD0iI0ZGNDg1OCIgcC1pZD0iMjEzNzAiPjwvcGF0aD48cGF0aCBkPSJNNDAyLjI4NTcxNCA2ODcuNTQyODU3YzczLjE0Mjg1NyAwIDEzNi41MzMzMzMtNDYuMzIzODEgMTYwLjkxNDI4Ni0xMTIuMTUyMzgxIDkuNzUyMzgxLTI2LjgxOTA0OC0xMi4xOTA0NzYtNTYuMDc2MTktNDEuNDQ3NjE5LTU2LjA3NjE5aC0yMzguOTMzMzMzYy0yOS4yNTcxNDMgMC00OC43NjE5MDUgMjkuMjU3MTQzLTQxLjQ0NzYxOSA1Ni4wNzYxOSAyNC4zODA5NTIgNjMuMzkwNDc2IDg3Ljc3MTQyOSAxMTIuMTUyMzgxIDE2MC45MTQyODUgMTEyLjE1MjM4MXoiIGZpbGw9IiNGRkZGRkYiIHAtaWQ9IjIxMzcxIj48L3BhdGg+PC9zdmc+");
   background-repeat: no-repeat;
   background-size: 100%;
   margin-right: 10rpx;
+}
+.pro-card .icon-yuan-cn{
+  font-size: 28rpx;
+  color: #E41919;
+}
+.pro-card .price-wrapper{
+  align-items: flex-end;
+}
+.pro-price{
+  margin-left: 5rpx;
+  font-family: Gobold;
+  font-size: 32rpx;
+}
+.pro-card .vip-label{
+  font-weight: bold;
+  text-align: center;
+  padding:2rpx 6rpx;
+  border-radius: 4rpx;
+  background: linear-gradient(to right, #ffffff, #FFF1F1);
+  font-size: 18rpx;
+  color: #E41919;
+  line-height: 32rpx;
+}
+.d-flex{
+  display: flex;
 }
