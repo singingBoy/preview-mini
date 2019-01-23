@@ -18,32 +18,33 @@
         </view>
     </view>
 
-    <!--团购、会员、积分兑换、今日特价-->
+    <!--团购、优享会员、积分兑换、星期特价-->
     <view class="guide-wrapper">
         <view class="guide-item guide-item-1">
             <view class="guide-title">一起拼</view>
             <view class="guide-description">更省钱、一起嗨</view>
-            <view class="guide-icon-1"></view>
+            <view class="guide-icon guide-icon-1"></view>
         </view>
         <view class="guide-item guide-item-2">
             <view class="guide-title">星期特价</view>
             <view class="guide-description">真是白菜价</view>
-            <view class="guide-icon-2"></view>
+            <view class="guide-icon guide-icon-2"></view>
         </view>
         <view class="guide-item guide-item-3">
             <view class="guide-title">优享会员</view>
             <view class="guide-description">会员价，定期活动等你来</view>
-            <view class="guide-icon-3"></view>
+            <view class="guide-icon guide-icon-3"></view>
         </view>
         <view class="guide-item guide-item-4">
             <view class="guide-title">积分兑换</view>
             <view class="guide-description">签到兑好礼</view>
-            <view class="guide-icon-4"></view>
+            <view class="guide-icon guide-icon-4"></view>
         </view>
     </view>
 
     <!--商品列表-->
-    <view class="container">
+    <view class="product-list">
+        <view class="wrapper-title">甄选海鲜</view>
         <product-list-card></product-list-card>
     </view>
 </block>
