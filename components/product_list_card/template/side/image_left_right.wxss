@@ -1,0 +1,19 @@
+.image-right{
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+.side-image {
+  width: 260rpx;
+  height: 220rpx;
+}
+.pro-image-right{
+  margin-right: 30rpx;
+}
+.pro-image-left{
+  margin-left: 30rpx;
+}
+.right-image{
+  width: 260rpx;
+  height: 100%;
+}

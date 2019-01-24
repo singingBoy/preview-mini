@@ -1,0 +1,9 @@
+<view class="image-right">
+    <view class="pro-image-left side-image">
+        <image class="right-image" lazy-load="{{true}}" mode="scaleToFill" src="{{product.images[0]}}"/>
+    </view>
+    <view class="pro-content-right">
+        <view class="pro-title">{{product.name}}</view>
+        <view class="pro-subtitle">{{product.description}}</view>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+<block>
+    <view class="pro-title">{{product.name}}</view>
+    <view class="pro-subtitle">{{product.description}}</view>
+    <view class="image-list">
+        <image class="image-list-item"
+               lazy-load="{{true}}"
+               mode="aspectFill"
+               wx:for="{{product.images}}"
+               wx:key="*this"
+               src="{{item}}"
+        />
+    </view>
+</block>

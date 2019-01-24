@@ -1,0 +1,27 @@
+<block>
+    <view class="pro-title">{{product.name}}</view>
+    <view class="pro-subtitle">{{product.description}}</view>
+    <swiper
+            indicator-dots="{{false}}"
+            autoplay="{{false}}"
+            current="{{current}}"
+            circular="{{true}}"
+            previous-margin="{{100}}"
+            next-margin="{{100}}"
+            skip-hidden-item-layout="{{true}}"
+            bindchange="onChange"
+    >
+        <block wx:for="{{product.images}}" wx:key="*this">
+            <swiper-item>
+                <view class="d-flex image-wrapper {{current === index ? 'active' : 'no-active'}}">
+                    <image class="pro-image"
+                           mode="scaleToFill"
+                           lazy-load="{{true}}"
+                           src="{{item}}"
+                    />
+                    <view class="no-active-cover" hidden="{{current === index}}"/>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</block>

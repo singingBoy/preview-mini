@@ -26,8 +26,8 @@
             <view class="guide-icon guide-icon-1"></view>
         </view>
         <view class="guide-item guide-item-2">
-            <view class="guide-title">星期特价</view>
-            <view class="guide-description">真是白菜价</view>
+            <view class="guide-title">直播</view>
+            <view class="guide-description">直播海鲜捕捞，吃得放心</view>
             <view class="guide-icon guide-icon-2"></view>
         </view>
         <view class="guide-item guide-item-3">
@@ -45,6 +45,10 @@
     <!--商品列表-->
     <view class="product-list">
         <view class="wrapper-title">甄选海鲜</view>
-        <product-list-card></product-list-card>
+        <product-list-card
+                wx:for="{{productList}}"
+                wx:key="{{item.id}}"
+                product="{{item}}"
+        />
     </view>
 </block>

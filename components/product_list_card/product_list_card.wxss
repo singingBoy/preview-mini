@@ -1,8 +1,16 @@
 @import "../../font/iconfont.wxss";
+@import "./template/banner/banner_image.wxss";
+@import "./template/float/float_images.wxss";
+@import "./template/side/image_left_right.wxss";
+@import "./template/list/image_list.wxss";
 
+.d-flex{
+  display: flex;
+}
 .pro-card{
   background-color: #ffffff;
   padding: 25rpx 0;
+  margin-bottom: 15rpx;
 }
 .pro-title {
   font-size: 32rpx;
@@ -11,6 +19,11 @@
   font-weight: bold;
   margin-bottom: 10rpx;
   padding: 0 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .pro-subtitle {
@@ -19,42 +32,11 @@
   line-height: 42rpx;
   margin-bottom: 20rpx;
   padding: 0 30rpx;
-}
-
-.pro-card swiper {
-  height: 240rpx;
-}
-
-.pro-card image {
-  height: 240rpx;
-  width: 100%;
-}
-
-.pro-card .image-wrapper{
-  position: relative;
-  transition: all .5s;
-}
-
-.pro-card .active {
-  transform: scale(1);
-}
-
-.pro-card .no-active {
-  transform: scale(.8);
-  box-shadow: 0 0 20rpx rgba(0, 0, 0, .5);
-}
-
-.pro-image {
-  border-radius: 8rpx;
-}
-
-.pro-card .no-active-cover{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, .5);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .pro-footer{
@@ -106,7 +88,4 @@
   font-size: 18rpx;
   color: #E41919;
   line-height: 32rpx;
-}
-.d-flex{
-  display: flex;
 }
