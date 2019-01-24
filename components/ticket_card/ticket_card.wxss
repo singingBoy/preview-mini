@@ -1,0 +1,98 @@
+@import "../../font/font.wxss";
+@import "../../font/iconfont.wxss";
+
+.ticket-card{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 600rpx;
+  height: 300rpx;
+  margin: 30rpx;
+  box-shadow: 2rpx 5rpx 10rpx 0rpx rgba(0, 0, 0, .5);
+  border-top-right-radius: 14rpx;
+  border-bottom-right-radius: 14rpx;
+}
+.word-ellipsis{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.ticket-image{
+  width: 250rpx;
+  height: 100%;
+  background-color: #fff;
+}
+.ticket-content{
+  padding: 20rpx 50rpx 20rpx 20rpx;
+  background-color: #fff;
+  border-top-right-radius: 14rpx;
+  border-bottom-right-radius: 14rpx;
+}
+.ticket-name{
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+}
+.ticket-rules{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #7f7f7f;
+  font-size: 22rpx;
+  margin-bottom: 12rpx;
+}
+.ticket-rules::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 2rpx;
+  top: 10rpx;
+  bottom: 10rpx;
+  left: 44%;
+  background-color: #E7E7E7;
+  transform: scaleX(.5);
+}
+.ticket-rules-item{
+  flex: 1;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.ticket-location{
+  font-size: 22rpx;
+  margin-bottom: 15rpx;
+}
+.ticket-location .icon-location{
+  font-size: 25rpx;
+  color: #58B7FF;
+  margin-right: 8rpx;
+}
+.ticket-price{
+  font-family: Gobold;
+  color: #f63;
+}
+.ticket-price .icon-yuan-cn-thin{
+  font-size: 25rpx;
+  margin-right: 8rpx;
+}
+.ticket-btn{
+  position: absolute;
+  bottom: 30rpx;
+  right: -20rpx;
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 22rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #e5bf86;
+  padding: 4rpx 15rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .3);
+}
+.icon-jiantouyou{
+  font-size: 22rpx;
+  margin-left: 10rpx;
+}

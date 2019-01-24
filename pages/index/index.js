@@ -1,10 +1,11 @@
-import {banners, productList} from 'data';
+import {banners, productList, tickets} from 'data';
 
 Page({
   data: {
     banners,
     bannerIndex: 0,
     productList,
+    tickets,
   },
   onLoad() {
   },
@@ -13,5 +14,8 @@ Page({
     this.setData({
       bannerIndex: current,
     })
+  },
+  navigateToCoupon() {
+
   }
 });

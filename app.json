@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "product-list-card": "components/product_list_card/product_list_card",
-    "nav-bar": "components/nav_bar/nav_bar"
+    "nav-bar": "components/nav_bar/nav_bar",
+    "ticket-card": "components/ticket_card/ticket_card"
   },
   "pages":[
     "pages/index/index",

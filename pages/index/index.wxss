@@ -108,6 +108,17 @@ swiper{
   background: #E7E7E7;
 }
 
+/* 优惠券 */
+.discount-coupon{
+  margin-top: 28rpx;
+  padding-bottom: 20rpx;
+  background-color: #FFF;
+}
+.ticket-coupon{
+  width: 100%;
+  overflow: hidden;
+}
+
 /* 商品列表 */
 .product-list{
   margin-top: 28rpx;

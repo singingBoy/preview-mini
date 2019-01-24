@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'ArialBlack';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://res.suv666.com/carhouse/tuner/ab.woff');
+  src: url('https://res.suv666.com/carhouse/tuner/ab.eot#iefix') format('embedded-opentype'),
+  url('https://res.suv666.com/carhouse/tuner/ab.woff') format('woff'),
+  url('https://res.suv666.com/carhouse/tuner/ab.TTF') format('truetype'),
+  url('https://res.suv666.com/carhouse/tuner/ab.svg') format('svg');
+}
+@font-face {
+  font-family: Gobold;
+  src: url("https://res.suv666.com/carhouse/tuner/Gobold5.eot");
+  /* IE9 */
+  src: url("https://res.suv666.com/carhouse/tuner/Gobold5.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://res.suv666.com/carhouse/tuner/Gobold5.woff") format("woff"), /* chrome、firefox */
+  url("https://res.suv666.com/carhouse/tuner/Gobold5.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+  url("https://res.suv666.com/carhouse/tuner/Gobold5.svg#Gobold") format("svg");
+  /* iOS 4.1- */
+}

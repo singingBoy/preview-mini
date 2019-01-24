@@ -1,3 +1,44 @@
+export const tickets = [{
+  id: 1,
+  shop: '海门鱼仔（东圃店）',
+  image: 'https://img.meituan.net/msmerchant/78350146ca0c70ff033a4da8698a128c105139.jpg%40345w_194h_1e_1c_1l%7Cwatermark%3D1%26%26r%3D1%26p%3D9%26x%3D20%26y%3D20',
+  rules: [
+      '每天11:00~14:30',
+      '酒水饮料、包厢、卡座不可用'
+  ],
+  location: '中山大道东溪大厦旁',
+  price: '满100减20',
+}, {
+  id: 2,
+  shop: '清一色·海鲜店',
+  image: 'https://img.meituan.net/msmerchant/092683718369a2aca3d086e0f02055fa172401.jpg.webp',
+  rules: [
+    '每天11:00~14:30',
+    '酒水饮料、包厢、卡座不可用'
+  ],
+  location: '中山大道东溪大厦旁',
+  price: '92代100元',
+}, {
+  id: 2,
+  shop: '清一色·海鲜店',
+  image: 'https://img.meituan.net/msmerchant/092683718369a2aca3d086e0f02055fa172401.jpg.webp',
+  rules: [
+    '每天11:00~14:30',
+    '酒水饮料、包厢、卡座不可用'
+  ],
+  location: '兴国路兴盛路11-17号',
+  price: '92代100元',
+}, {
+  id: 3,
+  shop: '79号渔船海鲜主题饭店',
+  image: 'https://img.meituan.net/msmerchant/95359c60baa295319d8dc702ab4c4ca3824246.jpg.webp',
+  rules: [
+    '每天11:00~14:30',
+    '酒水饮料、包厢、卡座不可用'
+  ],
+  location: '林和西路9号耀中广场3层',
+  price: '满200减50',
+}];
 export const banners = [{
   id: 1,
   image: 'http://img1.juimg.com/170620/355855-1F6200K42320.jpg',

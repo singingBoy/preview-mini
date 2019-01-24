@@ -1,0 +1,29 @@
+<view class="ticket-card d-flex">
+    <image class="ticket-image"
+           mode="aspectFit"
+           lazy-load="{{true}}"
+           src="{{ticket.image}}"
+    />
+    <view class="ticket-content">
+        <view class="ticket-name word-ellipsis">{{ticket.shop}}</view>
+        <view class="d-flex ticket-rules">
+            <view class="ticket-rules-item"
+                  wx:for="{{ticket.rules}}"
+                  wx:key="*this"
+                  wx:for-item="rule"
+            >{{rule}}</view>
+        </view>
+        <view class="ticket-location word-ellipsis">
+            <text class="iconfont icon-location" />
+            <text>{{ticket.location}}</text>
+        </view>
+        <view class="ticket-price">
+            <text class="iconfont icon-yuan-cn-thin" />
+            <text>{{ticket.price}}</text>
+        </view>
+    </view>
+    <view class="ticket-btn">
+        <text>立即查看</text>
+        <text class="iconfont icon-jiantouyou" />
+    </view>
+</view>

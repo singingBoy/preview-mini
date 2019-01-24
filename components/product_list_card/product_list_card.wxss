@@ -1,4 +1,5 @@
 @import "../../font/iconfont.wxss";
+@import "../../font/font.wxss";
 @import "./template/banner/banner_image.wxss";
 @import "./template/float/float_images.wxss";
 @import "./template/side/image_left_right.wxss";
