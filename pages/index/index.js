@@ -16,6 +16,6 @@ Page({
     })
   },
   navigateToCoupon() {
-
+    console.log(11111)
   }
 });

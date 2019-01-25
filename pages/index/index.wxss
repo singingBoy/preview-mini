@@ -116,7 +116,10 @@ swiper{
 }
 .ticket-coupon{
   width: 100%;
-  overflow: hidden;
+  white-space: nowrap;
+}
+.ticket-block{
+  display: inline-block;
 }
 
 /* 商品列表 */

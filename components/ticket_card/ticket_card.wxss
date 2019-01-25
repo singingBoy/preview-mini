@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
-  width: 600rpx;
+  width: 560rpx;
   height: 300rpx;
   margin: 30rpx;
   box-shadow: 2rpx 5rpx 10rpx 0rpx rgba(0, 0, 0, .5);
@@ -13,21 +13,25 @@
   border-bottom-right-radius: 14rpx;
 }
 .word-ellipsis{
+  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  white-space: pre-wrap;
 }
 .ticket-image{
-  width: 250rpx;
+  width: 230rpx;
   height: 100%;
   background-color: #fff;
+  flex-shrink: 0;
 }
 .ticket-content{
-  padding: 20rpx 50rpx 20rpx 20rpx;
+  padding: 20rpx 40rpx 20rpx 20rpx;
   background-color: #fff;
   border-top-right-radius: 14rpx;
   border-bottom-right-radius: 14rpx;
+  min-width: 0;
 }
 .ticket-name{
   font-size: 30rpx;
@@ -49,16 +53,22 @@
   width: 2rpx;
   top: 10rpx;
   bottom: 10rpx;
-  left: 44%;
+  left: 50%;
   background-color: #E7E7E7;
-  transform: scaleX(.5);
+  transform: scaleX(.5) translateX(-10rpx);
 }
 .ticket-rules-item{
   flex: 1;
+  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.ticket-rules-item:first-child{
+  margin-right: 20rpx;
 }
 .ticket-location{
   font-size: 22rpx;
