@@ -1,17 +1,40 @@
 <block>
-    <nav-bar>
-        <view slot="content" class="d-flex">
-            <view class="iconfont icon-back"></view>
-            <view>搜索</view>
-        </view>
-    </nav-bar>
-    <view class="hot-search">
-        <block wx:for="{{hotSearchList}}" wx:for-item="data" wx:key="{{data.type}}">
-            <view class="search-title">{{data.label}}</view>
-            <view class="search-keywords" wx:for="{{data.list}}" wx:key="{{item.id}}">
-                <image class="keyword-icon" src="{{item.icon}}" />
-                <text class="search-keyword">{{item.keyword}}</text>
-            </view>
-        </block>
+  <nav-bar fixed="{{false}}">
+    <view slot="content" class="d-flex">
+      <view class="iconfont icon-back" bindtap="navigateBack"/>
+      <view>搜索</view>
     </view>
+  </nav-bar>
+  <view class="d-flex align-items-center">
+    <view class="search-tool d-flex align-items-center">
+      <view class="iconfont icon-search" />
+      <input class="search-input"
+             placeholder="请输入关键词"
+             auto-focus="{{true}}"
+             bindconfirm="onSearch"
+             bindinput="saveKeyword"
+             value="{{keyword}}"
+      />
+      <view class="iconfont icon-close_light" bindtap="clearKeyWord"/>
+    </view>
+    <view class="search-btn" bindtap="onSearch">找一下</view>
+  </view>
+  <view class="hot-search" wx:if="{{historySearch && historySearch.length}}">
+    <view class="search-title d-flex align-items-center justify-content-between">
+      <view>我曾找寻过你……</view>
+      <view class="iconfont icon-refresh_light" bindtap="clearHistory"/>
+    </view>
+    <view class="search-keywords" wx:for="{{historySearch}}" wx:key="*this">
+      <text class="search-keyword">{{item}}</text>
+    </view>
+  </view>
+  <view class="hot-search">
+    <block wx:for="{{hotSearchList}}" wx:for-item="data" wx:key="{{data.type}}">
+      <view class="search-title">{{data.label}}</view>
+      <view class="search-keywords" wx:for="{{data.list}}" wx:key="{{item.id}}">
+        <image class="keyword-icon" wx:if="{{item.icon}}" src="{{item.icon}}"/>
+        <text class="search-keyword">{{item.keyword}}</text>
+      </view>
+    </block>
+  </view>
 </block>

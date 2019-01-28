@@ -9,7 +9,27 @@ page{
   font-size: 26rpx;
   padding: 20rpx 30rpx;
 }
-
+.search-tool{
+  flex: 1;
+  background-color: #E7E7E7;
+  border-radius: 32rpx;
+  padding: 10rpx 20rpx;
+  margin-left: 30rpx;
+  font-size: 26rpx;
+}
+.icon-search{
+  color: #676767;
+}
+.icon-close_light{
+  color: #676767;
+  width: 100rpx;
+  text-align: right;
+}
+.search-input{
+  margin-left: 15rpx;
+  width: 100%;
+  color: #2A2A2A;
+}
 .search-keywords{
   display: inline-flex;
   align-items: center;
@@ -31,4 +51,18 @@ page{
 .keyword-icon{
   width: 30rpx;
   height: 30rpx;
+}
+.search-btn{
+  height: 60rpx;
+  padding: 0 20rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  letter-spacing: 5rpx;
+  text-align: center;
+}
+.icon-refresh_light{
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: right;
 }
