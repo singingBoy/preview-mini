@@ -1,0 +1,17 @@
+<block>
+    <nav-bar>
+        <view slot="content" class="d-flex">
+            <view class="iconfont icon-back"></view>
+            <view>搜索</view>
+        </view>
+    </nav-bar>
+    <view class="hot-search">
+        <block wx:for="{{hotSearchList}}" wx:for-item="data" wx:key="{{data.type}}">
+            <view class="search-title">{{data.label}}</view>
+            <view class="search-keywords" wx:for="{{data.list}}" wx:key="{{item.id}}">
+                <image class="keyword-icon" src="{{item.icon}}" />
+                <text class="search-keyword">{{item.keyword}}</text>
+            </view>
+        </block>
+    </view>
+</block>

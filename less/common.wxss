@@ -7,3 +7,6 @@
 .position-absolute{
   position: absolute;
 }
+.align-items-center{
+  align-items: center;
+}

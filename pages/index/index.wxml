@@ -1,7 +1,20 @@
 <block>
+    <nav-bar background="{{navBarBackground}}" color="{{navBarColor}}" fixed="{{navBarFixed}}">
+        <view slot="content" class="search-bar d-flex align-items-center" bindtap="navigateToSearch">
+            <view class="iconfont icon-search" />
+            <swiper class="keys-list"
+                    autoplay="{{true}}"
+                    circular="{{true}}"
+                    vertical="{{true}}"
+                    bindchange="onKeyWordChange"
+            >
+                <swiper-item wx:for="{{searchKeys}}" wx:key="*this">{{item}}</swiper-item>
+            </swiper>
+        </view>
+    </nav-bar>
     <!-- banner -->
     <view class="position-relative">
-        <swiper autoplay="true" bindchange="changeBanner">
+        <swiper class="banner-swipe" autoplay="true" bindchange="changeBanner">
             <block wx:for="{{banners}}" wx:key="{{item.id}}">
                 <swiper-item>
                     <image lazy-load="true" mode="aspectFill" src="{{item.image}}" class="banner-img"/>

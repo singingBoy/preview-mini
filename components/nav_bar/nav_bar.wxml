@@ -1,13 +1,8 @@
 <block>
-    <view class="nav-bar" style="padding-top: {{statusBarHeight}}px;">
-        <view style="width: {{barContentLeft}}px; height: {{barContentHeight}}px;">
-            <view class="nav-bar-left">
-                <slot name="left"></slot>
-            </view>
-            <view class="nav-bar-center">
-                <slot name="center"></slot>
-            </view>
+    <view class="nav-bar" style="padding-top: {{statusBarHeight}}px; background: {{background}}; color: {{color}}">
+        <view class="nav-bar-content" style="width: {{barContentLeft}}px; height: {{barContentHeight}}px; line-height: {{barContentHeight}}px">
+            <slot name="content"></slot>
         </view>
     </view>
-    <view class="nav-bar-cover" style="height: {{barContentHeight + statusBarHeight}}px"/>
+    <view class="nav-bar-cover" style="height: {{barContentHeight + statusBarHeight}}px;" wx:if="{{!fixed}}"/>
 </block>

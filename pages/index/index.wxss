@@ -1,5 +1,17 @@
+/* 导航 */
+.search-bar{
+  width: 100%;
+  padding: 8rpx 16rpx;
+  border-radius: 32rpx;
+}
+.keys-list {
+  width: 100%;
+  height: 90rpx;
+  margin-left: 30rpx;
+}
+
 /* banner */
-swiper{
+.banner-swipe{
   height: 500rpx;
 }
 .banner-img{
@@ -126,4 +138,3 @@ swiper{
 .product-list{
   margin-top: 28rpx;
 }
-
