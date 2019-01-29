@@ -1,0 +1,8 @@
+<block>
+  <nav-bar background="{{navBarBackground}}" color="{{navBarColor}}" fixed="{{true}}">
+    <view slot="content" class="d-flex">
+      <view class="iconfont icon-back" bindtap="navigateBack"/>
+      <view>送礼啦</view>
+    </view>
+  </nav-bar>
+</block>

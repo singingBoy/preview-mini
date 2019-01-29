@@ -74,5 +74,17 @@ Page({
     wx.navigateTo({
       url: '/pages_news/live_broadcast/live_broadcast',
     });
-  }
+  },
+  // VIP
+  navigateToVip() {
+    wx.navigateTo({
+      url: '/page_others/vip_room/vip_room',
+    });
+  },
+  // 积分
+  navigateToCreditRoom() {
+    wx.navigateTo({
+      url: '/page_others/credit_room/credit_room',
+    });
+  },
 });

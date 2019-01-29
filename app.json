@@ -21,6 +21,13 @@
       "pages": [
         "live_broadcast/live_broadcast"
       ]
+    },
+    {
+      "root": "page_others",
+      "pages": [
+        "vip_room/vip_room",
+        "credit_room/credit_room"
+      ]
     }
   ],
   "window":{

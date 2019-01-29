@@ -43,12 +43,12 @@
             <view class="guide-description">看现场图文，吃得放心</view>
             <view class="guide-icon guide-icon-2"></view>
         </view>
-        <view class="guide-item guide-item-3">
+        <view class="guide-item guide-item-3" bindtap="navigateToVip">
             <view class="guide-title">优享会员</view>
             <view class="guide-description">会员价，定期活动等你来</view>
             <view class="guide-icon guide-icon-3"></view>
         </view>
-        <view class="guide-item guide-item-4">
+        <view class="guide-item guide-item-4" bindtap="navigateToCreditRoom">
             <view class="guide-title">积分兑换</view>
             <view class="guide-description">签到兑好礼</view>
             <view class="guide-icon guide-icon-4"></view>
