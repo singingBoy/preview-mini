@@ -1,0 +1,45 @@
+<block>
+  <nav-bar fixed="{{false}}">
+    <view slot="content" class="d-flex">
+      <view class="iconfont icon-back" bindtap="navigateBack"/>
+      <view>拼多多，一起嗨</view>
+    </view>
+  </nav-bar>
+  <view class="d-flex tabs-wrapper">
+    <view class="tab-item {{currentTab === 'list' ? 'tab-active' : ''}}"
+          bindtap="onChangeTab"
+          data-tab="list"
+    >开团咯</view>
+    <view class="tab-item {{currentTab === 'me' ? 'tab-active' : ''}}"
+          bindtap="onChangeTab"
+          data-tab="me"
+    >我的团</view>
+  </view>
+  <swiper class="content-swiper"
+          current="{{currentTab === 'list' ? 0 : 1}}"
+          bindchange="swipeChange"
+          style="height: {{contentHeight}}px"
+  >
+    <swiper-item class="swiper-item">
+      <scroll-view scroll-y="true" style="height: {{contentHeight}}px">
+        <image src="{{banner}}"
+               lazy-load="true"
+               mode="widthFix"
+               class="group-buying_banner"
+        />
+        <product-list-card
+          wx:for="{{productList}}"
+          wx:key="{{item.id}}"
+          product="{{item}}"
+          type="group-buying"
+        />
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <view wx:if="{{!myGroupBuying.length}}" class="d-flex flex-column align-items-center justify-content-center" style="height: {{contentHeight}}px">
+        <view class="empty-wrapper"/>
+        <view class="empty-description">生活有鸭梨，还有空气</view>
+      </view>
+    </swiper-item>
+  </swiper>
+</block>

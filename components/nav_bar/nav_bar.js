@@ -7,15 +7,15 @@ Component({
   properties: {
     background: {
       type: String,
-      default: '#fff',
+      value: '#fff',
     },
     color: {
       type: String,
-      default: '#2A2A2A',
+      value: '#2A2A2A',
     },
     fixed: {
       type: Boolean,
-      default: false,
+      value: false,
     }
   },
   data: {

@@ -24,7 +24,6 @@ Page({
             };
             wx.setNavigationBarColor(barStyle);
             this.setData({
-              navBarFixed: true,
               navBarBackground: barStyle.backgroundColor,
               navBarColor: barStyle.frontColor,
             })
@@ -35,7 +34,6 @@ Page({
             };
             wx.setNavigationBarColor(barStyle);
             this.setData({
-              navBarFixed: false,
               navBarBackground: barStyle.backgroundColor,
               navBarColor: barStyle.frontColor,
             })
@@ -55,12 +53,26 @@ Page({
     const { current } = e.detail;
     this.keyWord = this.data.searchKeys[current];
   },
+  // 优惠券
   navigateToCoupon() {
     console.log(11111)
   },
+  // 搜索
   navigateToSearch() {
     wx.navigateTo({
       url: `/pages/search/search?keyword=${this.keyWord}`,
     });
   },
+  // 团购
+  navigateToGroupBuying() {
+    wx.navigateTo({
+      url: '/pages_buy/group_buying/group_buying',
+    });
+  },
+  // 现场
+  navigateToLive() {
+    wx.navigateTo({
+      url: '/pages_news/live_broadcast/live_broadcast',
+    });
+  }
 });

@@ -1,5 +1,5 @@
 <block>
-    <nav-bar background="{{navBarBackground}}" color="{{navBarColor}}" fixed="{{navBarFixed}}">
+    <nav-bar background="{{navBarBackground}}" color="{{navBarColor}}" fixed="{{true}}">
         <view slot="content" class="search-bar d-flex align-items-center" bindtap="navigateToSearch">
             <view class="iconfont icon-search" />
             <swiper class="keys-list"
@@ -33,14 +33,14 @@
 
     <!--团购、优享会员、积分兑换、星期特价-->
     <view class="guide-wrapper">
-        <view class="guide-item guide-item-1">
+        <view class="guide-item guide-item-1" bindtap="navigateToGroupBuying">
             <view class="guide-title">一起拼</view>
             <view class="guide-description">更省钱、一起嗨</view>
             <view class="guide-icon guide-icon-1"></view>
         </view>
-        <view class="guide-item guide-item-2">
-            <view class="guide-title">直播</view>
-            <view class="guide-description">直播海鲜捕捞，吃得放心</view>
+        <view class="guide-item guide-item-2" bindtap="navigateToLive">
+            <view class="guide-title">现场</view>
+            <view class="guide-description">看现场图文，吃得放心</view>
             <view class="guide-icon guide-icon-2"></view>
         </view>
         <view class="guide-item guide-item-3">

@@ -1,3 +1,4 @@
 export default {
-  userInfo: null
+  userInfo: null,
+  systemInfo: wx.getSystemInfoSync(),
 }

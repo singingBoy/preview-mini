@@ -20,7 +20,9 @@
         <block wx:if="{{product.type === CardType.imageList}}">
             <include src="./template/list/image_list.wxml"/>
         </block>
-        <view class="pro-footer">
+
+        <!--商品操作栏-->
+        <view class="pro-footer" wx:if="{{type === CardServe.PRODUCTION}}">
             <view class="pro-statics d-flex">
                 <view>
                     <text class="iconfont icon-attentionfavorfill"> {{product.viewers}}人看过</text>
@@ -35,7 +37,20 @@
                     </view>
                 </view>
             </view>
-            <view></view>
+        </view>
+        <!--团购操作栏-->
+        <view class="pro-footer" wx:if="{{type === CardServe.GROUP_BUYING}}">
+          <view class="pro-statics d-flex">
+            <view class="group-buying_btn">走起</view>
+            <view class="d-flex price-wrapper">
+              <text class="iconfont icon-yuan-cn">
+                <text class="pro-price">{{product.price}}</text>
+              </text>
+              <view>
+                <text class="vip-label">团购优惠 {{product.reduce}}</text>
+              </view>
+            </view>
+          </view>
         </view>
     </view>
 </block>

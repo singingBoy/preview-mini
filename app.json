@@ -9,6 +9,20 @@
     "pages/search/search",
     "pages/logs/logs"
   ],
+  "subpackages": [
+    {
+      "root": "pages_buy",
+      "pages": [
+        "group_buying/group_buying"
+      ]
+    },
+    {
+      "root": "pages_news",
+      "pages": [
+        "live_broadcast/live_broadcast"
+      ]
+    }
+  ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",

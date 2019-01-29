@@ -1,3 +1,5 @@
+import globalData from "../globalData";
+
 export function getStatusBarHeight() {
   return wx.getSystemInfoSync().statusBarHeight;
 }
@@ -18,3 +20,14 @@ export function getBarContentInfo() {
     barContentLeft: left,
   }
 }
+
+export function rpxToPx(rpx) {
+  const { windowWidth } = getApp().globalData.systemInfo;
+  return rpx * (windowWidth / 750);
+}
+
+export function pxToRpx(px) {
+  const { windowWidth } = getApp().globalData.systemInfo;
+  return px * (750 / windowWidth);
+}
+

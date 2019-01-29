@@ -1,9 +1,6 @@
 page{
   background-color: #ffffff;
 }
-.icon-back{
-  width: 100rpx;
-}
 
 .hot-search{
   font-size: 26rpx;

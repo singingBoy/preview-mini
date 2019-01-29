@@ -1,0 +1,40 @@
+page{
+  background-color:#f5f5f5;
+}
+.tabs-wrapper{
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.tab-item{
+  flex: 1;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fff;
+  font-size: 28rpx;
+}
+.tab-active{
+  color: #E41919;
+  position: relative;
+}
+.tab-active::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  height: 5rpx;
+  bottom: 0rpx;
+  background-color: #E41919;
+  transform: translateX(-50%);
+}
+.swiper-item{
+  overflow-y: scroll;
+}
+.content-swiper{
+}
+.group-buying_banner{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "product-list-card": "../../components/product_list_card/product_list_card",
+    "nav-bar": "../../components/nav_bar/nav_bar"
+  },
+  "navigationBarTitleText": "团购"
+}
