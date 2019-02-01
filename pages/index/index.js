@@ -20,11 +20,11 @@ Page({
           if (bottom > 0) {
             const barStyle = {
               frontColor: '#ffffff',
-              backgroundColor: 'transparent',
+              backgroundColor: '#000000',
             };
             wx.setNavigationBarColor(barStyle);
             this.setData({
-              navBarBackground: barStyle.backgroundColor,
+              navBarBackground: 'transparent',
               navBarColor: barStyle.frontColor,
             })
           } else {

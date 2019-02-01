@@ -1,5 +1,5 @@
 <block>
-    <view class="nav-bar" style="padding-top: {{statusBarHeight}}px; background: {{background}}; color: {{color}}">
+    <view class="nav-bar" style="padding-top: {{statusBarHeight}}px; background-color: {{background}}; color: {{color}}">
         <view class="nav-bar-content" style="width: {{barContentLeft}}px; height: {{barContentHeight}}px; line-height: {{barContentHeight}}px">
             <slot name="content"></slot>
         </view>
