@@ -1,3 +1,37 @@
+export const classifies = [{
+  id: 1,
+  name: '鱼类',
+  icon: '../../images/classify/fish.png',
+},{
+  id: 2,
+  name: '虾类',
+  icon: '../../images/classify/xia.png',
+},{
+  id: 3,
+  name: '蟹类',
+  icon: '../../images/classify/xie.png',
+},{
+  id: 4,
+  name: '贝类',
+  icon: '../../images/classify/bei.png',
+},{
+  id: 5,
+  name: '软足类',
+  icon: '../../images/classify/youyu.png',
+},{
+  id: 6,
+  name: '藻类',
+  icon: '../../images/classify/zao.png',
+},{
+  id: 7,
+  name: '海鲜制品',
+  icon: '../../images/classify/haishen.png',
+},{
+  id: 8,
+  name: '更多',
+  keyword: '',
+  icon: '../../images/classify/more.png',
+}];
 export const searchKeys = [
   '海虾', '螃蟹', '鱿鱼', '鲍鱼', '大黄鱼',
 ];
@@ -45,10 +79,21 @@ export const tickets = [
   }];
 export const banners = [
   {
-    id: 1,
-    image: 'http://img1.juimg.com/170620/355855-1F6200K42320.jpg',
-    time: '2019年1月22日 15:57:25'
-  }, {
+    id: 0,
+    image: 'https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1549807067&di=0cda5df7d3a61ed4d8e9554d41f64dc6&src=http://img.yzcdn.cn/upload_files/2016/04/23/Fs-voVuR2YwlnAWoqAUuRAb7u7-f.jpg%21730x0.jpg',
+    time: '2019年2月10日 21:55:18'
+  },
+  {
+    id: 3,
+    image: 'https://tse3.mm.bing.net/th?id=OIP.yklBTCZjYWaVG4TMcB-scgHaEU&pid=Api',
+    time: '2019年2月10日 21:55:18'
+  },
+  {
+    id: 4,
+    image: 'https://tse4.mm.bing.net/th?id=OIP.6r6K-wx6ExhwAKQ8dbEQTQHaE8&pid=Api',
+    time: '2019年2月10日 21:55:18'
+  },
+  {
     id: 2,
     image: 'http://img4.imgtn.bdimg.com/it/u=2041099924,1985582387&fm=214&gp=0.jpg',
     time: '2019年1月23日 16:17:25'

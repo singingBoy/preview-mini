@@ -1,4 +1,4 @@
-import {banners, productList, tickets, searchKeys} from 'data';
+import {banners, productList, tickets, searchKeys, classifies} from 'data';
 
 Page({
   data: {
@@ -7,6 +7,7 @@ Page({
     productList,
     tickets,
     searchKeys,
+    classifies,
   },
   onLoad() {
     // 关键字
@@ -53,10 +54,6 @@ Page({
     const { current } = e.detail;
     this.keyWord = this.data.searchKeys[current];
   },
-  // 优惠券
-  navigateToCoupon() {
-    console.log(11111)
-  },
   // 搜索
   navigateToSearch() {
     wx.navigateTo({
@@ -85,6 +82,13 @@ Page({
   navigateToCreditRoom() {
     wx.navigateTo({
       url: '/page_others/credit_room/credit_room',
+    });
+  },
+  // 商品列表
+  navigateToProducts(e) {
+    const { keyword } = e.currentTarget.dataset;
+    wx.navigateTo({
+      url: `/pages/products/products?keyword=${keyword}`,
     });
   },
 });
