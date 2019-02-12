@@ -6,8 +6,10 @@
   },
   "pages":[
     "pages/index/index",
-    "pages/search/search",
-    "pages/logs/logs"
+    "pages/classify/classify",
+    "pages/friends/friends",
+    "pages/me/me",
+    "pages/search/search"
   ],
   "subpackages": [
     {
@@ -26,7 +28,9 @@
       "root": "page_others",
       "pages": [
         "vip_room/vip_room",
-        "credit_room/credit_room"
+        "credit_room/credit_room",
+        "post/post",
+        "commons/commons"
       ]
     }
   ],
@@ -49,17 +53,22 @@
         "selectedIconPath": "images/tab_icon_0_active.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "iconPath": "images/tab_icon_1.png",
-        "selectedIconPath": "images/tab_icon_1_active.png"
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/icon_lobster_line.png",
+        "selectedIconPath": "images/icon_lobster_coloure.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "iconPath": "images/tab_icon_2.png",
-        "selectedIconPath": "images/tab_icon_2_active.png"
+        "pagePath": "pages/friends/friends",
+        "iconPath": "images/icon_icecream_line.png",
+        "selectedIconPath": "images/icon_icecream_colour.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/friends/friends",
+        "iconPath": "images/icon_salad_line.png",
+        "selectedIconPath": "images/icon_salad_coloured.png"
+      },
+      {
+        "pagePath": "pages/me/me",
         "iconPath": "images/tab_icon_3.png",
         "selectedIconPath": "images/tab_icon_3_active.png"
       }

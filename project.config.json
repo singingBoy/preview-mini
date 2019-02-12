@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -50,6 +50,21 @@
 					"id": -1,
 					"name": "group_buying",
 					"pathName": "pages_buy/group_buying/group_buying",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "classify",
+					"pathName": "pages/classify/classify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "friends",
+					"pathName": "pages/friends/friends",
+					"query": "",
 					"scene": null
 				}
 			]

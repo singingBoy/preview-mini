@@ -1,5 +1,3 @@
-import globalData from "../globalData";
-
 export function getStatusBarHeight() {
   return wx.getSystemInfoSync().statusBarHeight;
 }

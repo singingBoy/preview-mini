@@ -1,0 +1,53 @@
+<block>
+  <nav-bar fixed="{{true}}">
+    <view slot="content" class="search-bar d-flex align-items-center" bindtap="navigateToSearch">
+      <view class="iconfont icon-search"/>
+      <swiper class="keys-list"
+              autoplay="{{true}}"
+              circular="{{true}}"
+              vertical="{{true}}"
+              bindchange="onKeyWordChange"
+      >
+        <swiper-item wx:for="{{searchKeys}}" wx:key="*this">{{item}}</swiper-item>
+      </swiper>
+    </view>
+  </nav-bar>
+  <view class="d-flex classify-wrapper" style="padding-top: {{contentPadding}}px; height: {{contentHeight}}px">
+    <!--左边-->
+    <view class="classify-left">
+      <view wx:for="{{classifies}}" wx:key="{{item.id}}"
+            class="d-flex align-items-center position-relative classify-left-item"
+            data-index="{{index}}"
+            bindtap="changeClassify"
+      >
+        <image src="{{item.icon}}" class="classify-left-item-image" lazy-load="true" mode="aspectFit"/>
+        <view class="classify-left-item-name {{index === activeClassifyIndex ? 'classify-left-item-name-active':''}}">{{item.name}}</view>
+        <view class="classify-left-item-active" hidden="{{index !== activeClassifyIndex}}"/>
+      </view>
+    </view>
+    <!--右边-->
+    <view class="classify-right">
+      <swiper
+        wx:if="{{classifies[activeClassifyIndex].ad}}"
+        indicator-dots="{{classifies[activeClassifyIndex].ad.length > 1}}"
+        autoplay="true"
+        interval="true"
+        indicator-color="rgba(255,255,255, .5)"
+        indicator-active-color="#E41919"
+        class="classify-right-ad"
+      >
+        <block wx:for="{{classifies[activeClassifyIndex].ad}}" wx:key="*this">
+          <swiper-item>
+            <image class="classify-right-ad" mode="aspectFill" src="{{item}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+
+      <view class="d-flex classify-right-content">
+        <view wx:for="{{classifies[activeClassifyIndex].list}}" wx:key="{{item.id}}" class="classify-right-item">
+          {{item.name}}
+        </view>
+      </view>
+    </view>
+  </view>
+</block>

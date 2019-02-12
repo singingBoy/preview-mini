@@ -2,6 +2,8 @@ export default [
   {
     id: 1,
     name: '鱼类',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/58cb8945Ne6d24ad8.png',
+    ad: ['http://plsi1usd8.bkt.clouddn.com/12316145_163730696399_2.jpg'],
     list: [
       {
         id: 1,
@@ -88,6 +90,7 @@ export default [
   {
     id: 2,
     name: '虾类',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/58cb926fN2d1e3a55.png',
     list: [
       {
         id: 1,
@@ -134,6 +137,7 @@ export default [
   {
     id: 3,
     name: '蟹类',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/5b627898N206773b4.jpg',
     list: [
       {
         id: 1,
@@ -176,6 +180,7 @@ export default [
   {
     id: 4,
     name: '贝类',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/58cb9b5cN31501dcd.png',
     list: [
       {
         id: 1,
@@ -226,6 +231,7 @@ export default [
   {
     id: 5,
     name: '软足类',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/5a7011aaN77bf12d6.jpg',
     list: [
       {
         id: 1,
@@ -252,6 +258,7 @@ export default [
   {
     id: 6,
     name: '藻类',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/5a1f8c34N163f9d18.png',
     list: [
       {
         id: 1,
@@ -290,6 +297,7 @@ export default [
   {
     id: 7,
     name: '海鲜干货',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/58cb9bb6N0943af19.png',
     list: [
       {
         id: 1,
@@ -340,6 +348,7 @@ export default [
   {
     id: 8,
     name: '海鲜制品',
+    icon: 'http://plsi1usd8.bkt.clouddn.com/5a42030bNa2866ba6.png',
     list: [
       {
         id: 1,

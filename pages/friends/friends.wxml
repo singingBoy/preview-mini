@@ -1,0 +1,140 @@
+<view class="friends-wrapper">
+  <nav-bar fixed="{{true}}">
+    <view slot="content" class="d-flex align-items-center">
+      <view bindtap="changeTab" data-tab="find" class="tab-title {{currentTab === 'find' ? 'tab-title-active' : ''}}">发现</view>
+      <view bindtap="changeTab" data-tab="me" class="position-relative tab-title {{currentTab === 'me' ? 'tab-title-active' : ''}}">
+        我的
+        <view class="iconfont icon-evaluate_fill"/>
+      </view>
+    </view>
+  </nav-bar>
+
+  <view style="padding-top: {{contentPaddingTop}}px;">
+    <view hidden="{{currentTab === 'find'}}">
+      <view class="commons-tip-wrapper">
+        <view class="commons-tip">
+          <text class="iconfont icon-appreciate_fill_light" />
+          <text>您有4条新评论留言，又集了10个赞</text>
+        </view>
+      </view>
+      <view class="my-dynamic" wx:for="{{myDynamic}}" wx:key="{{item.id}}" wx:if="{{item.list.length}}">
+        <view class="my-dynamic-year">{{item.year}}年</view>
+        <view class="d-flex my-dynamic-article"
+              wx:for="{{item.list}}"
+              wx:for-item="dynamic"
+              wx:key="{{dynamic.id}}"
+              bindtap="previewImages"
+        >
+          <view class="my-dynamic-date">
+            <text class="my-dynamic-day">{{dynamic.day}}</text>
+            <text class="my-dynamic-month">{{dynamic.month}}月</text>
+          </view>
+          <view>
+            <view class="d-flex">
+              <image class="my-dynamic-image" lazy-load="true" src="{{dynamic.images[0]}}"/>
+              <view class="d-flex my-dynamic-info">
+                <view class="my-dynamic-content">{{dynamic.content}}</view>
+                <view class="my-dynamic-image-length">共{{dynamic.images.length}}张</view>
+              </view>
+            </view>
+            <view class="d-flex my-support-opt">
+              <view class="iconfont icon-appreciate_fill_light" bindtap="supportLike"> 66</view>
+              <view class="iconfont icon-community_fill_light"> 40</view>
+            </view>
+            <view class="friends-support-commons">
+              <view class="friends-support-commons-item">
+                <text class="common-friend-name">启*荣：</text>
+                <text>小姐姐好手艺，约不约？</text>
+              </view>
+              <view class="friends-support-commons-item">
+                <text class="common-friend-name">启*荣：</text>
+                <text>小姐姐好想跟你生猴子,生猴子,生猴子,生猴子……</text>
+              </view>
+              <view class="friends-support-commons-item">
+                <text class="common-friend-name">杨*星：</text>
+                <text>感觉海鲜不辣不好吃~</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view hidden="{{currentTab === 'me'}}">
+      <!-- banner -->
+      <view class="position-relative">
+        <swiper class="banner-swipe" autoplay="true" circular="true" bindchange="changeBanner">
+          <block wx:for="{{adBanners}}" wx:key="{{item.id}}">
+            <swiper-item>
+              <image lazy-load="true" mode="center" src="{{item.image}}" class="banner-img"/>
+            </swiper-item>
+          </block>
+        </swiper>
+        <!--指示器-->
+        <view class="banner-dots d-flex">
+          <view
+            class="dot-item {{bannerIndex == index ? 'dot-active':'' }}"
+            wx:for="{{adBanners}}"
+            wx:key="dots-{{item.id}}"
+          />
+        </view>
+      </view>
+      <view class="friends-dynamic" wx:for="{{10}}" wx:key="*this">
+        <view class="d-flex friends-dynamic-header">
+          <image
+            class="friends-icon"
+            lazy-load="true"
+            src="http://pic.qqtn.com/up/2017-11/2017110215093888510.jpg"
+          />
+          <view class="friends-info">
+            <view class="friends-name">暖**暖</view>
+            <rich-text class="friends-say"
+                       nodes="🎉🎉很棒，😃这个虾收到还是鲜活的，跟朋友一次很愉快的聚餐，希望越来越多的海鲜能在我们这个地方购买，以前想买的时候没有货，都是现在挺好的，以后会常在这里购买东西的🙂。"></rich-text>
+            <view class="image-list" wx:if="{{testImages.length}}">
+              <image class="image-list-item"
+                     lazy-load="{{true}}"
+                     mode="aspectFill"
+                     wx:for="{{testImages}}"
+                     wx:key="*this"
+                     src="{{item}}"
+                     data-image="{{item}}"
+                     bindtap="previewImages"
+              />
+            </view>
+
+            <view class="d-flex friends-support">
+              <view class="friends-address">广州 · 怡乐花园</view>
+              <view class="d-flex friends-support-opt">
+                <view class="iconfont icon-appreciate_fill_light" bindtap="supportLike"> 66</view>
+                <view class="iconfont icon-community_fill_light"> 40</view>
+              </view>
+            </view>
+
+            <view class="friends-support-commons" bindtap="navigateToCommons">
+              <view class="friends-support-commons-item">
+                <text class="common-friend-name">启*荣：</text>
+                <text>小姐姐好手艺，约不约？</text>
+              </view>
+              <view class="friends-support-commons-item">
+                <text class="common-friend-name">启*荣：</text>
+                <text>小姐姐好想跟你生猴子,生猴子,生猴子,生猴子……</text>
+              </view>
+              <view class="friends-support-commons-item">
+                <text class="common-friend-name">杨*星：</text>
+                <text>感觉海鲜不辣不好吃~</text>
+              </view>
+              <view class="iconfont icon-more_light"/>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--发帖按钮-->
+  <view class="post-dynamic {{postBtnShow ? 'post-dynamic-show' : 'post-dynamic-hide'}}" bindtap="navigateToPost">
+    <view class="post-dynamic-btn position-relative">
+      <view class="iconfont icon-camerafill"></view>
+    </view>
+  </view>
+</view>

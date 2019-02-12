@@ -1,0 +1,265 @@
+page{
+  background-color: #ffffff;
+}
+.friends-wrapper{
+
+}
+
+.tab-title{
+  font-size: 32rpx;
+  padding: 0 30rpx;
+  letter-spacing: 10rpx;
+}
+.tab-title-active{
+  font-weight: bold;
+}
+.tab-title-active::after{
+  content: '';
+  display: block;
+  background-color: #2A2A2A;
+  width: 100%;
+  height: 5rpx;
+  border-radius: 2rpx;
+}
+
+.icon-evaluate_fill{
+  position: absolute;
+  top: -10rpx;
+  right: 10rpx;
+  color: #E41919;
+  font-size: 15rpx;
+}
+
+.commons-tip-wrapper{
+  text-align: center;
+}
+.commons-tip{
+  display: inline-block;
+  margin-top: 30rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: rgba(0, 0, 0, .5);
+  font-size: 26rpx;
+  line-height: 40rpx;
+  color: #ffffff;
+}
+.icon-appreciate_fill_light{
+  margin-right: 10rpx;
+}
+
+.my-dynamic{
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+.my-dynamic-year{
+  font-family: Gobold;
+  font-size: 40rpx;
+  line-height: 48rpx;
+  font-weight: bold;
+  color: #2A2A2A;
+}
+.my-dynamic-article{
+  padding: 30rpx 0 20rpx;
+}
+.my-dynamic-date{
+  flex-shrink: 0;
+  width: 120rpx;
+}
+.my-dynamic-day{
+  font-family: Gobold;
+  font-weight: bold;
+  font-size: 38rpx;
+  color: #2A2A2A;
+  margin-right: 8rpx;
+}
+
+.my-dynamic-image{
+  flex-shrink: 0;
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+}
+
+.my-dynamic-info{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.my-dynamic-content{
+  line-height: 38rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.my-dynamic-image-length{
+  color: #B0B0B0;
+  font-size: 24rpx;
+}
+
+.my-support-opt{
+  margin: 10rpx 0;
+  color: #009966;
+}
+.my-support-opt .iconfont{
+  font-size: 24rpx;
+}
+
+/* banner */
+.banner-swipe{
+  height: 350rpx;
+}
+.banner-img{
+  width: 100%;
+  height: 100%;
+}
+.banner-dots{
+  position: absolute;
+  bottom: 24rpx;
+  right: 30rpx;
+}
+.dot-item {
+  width: 8rpx;
+  height: 8rpx;
+  background: rgba(255,255,255,.5);
+  border-radius: 4px;
+  margin-right: 8rpx;
+}
+.dot-item:last-child {
+  margin-right: 0;
+}
+.dot-active {
+  width: 22rpx;
+  background-color: #E41919;
+}
+
+.friends-dynamic{
+  padding: 30rpx;
+  border-top: 1rpx solid #E7E7E7;
+}
+
+.friends-icon{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  flex-shrink: 0;
+}
+
+.friends-dynamic-header{
+  padding-right: 40rpx;
+}
+.friends-name{
+  font-size: 30rpx;
+  color: #2A2A2A;
+  font-weight: bold;
+}
+.friends-say{
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.friends-address{
+  width: 350rpx;
+  color: #009966;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.friends-support{
+  justify-content: space-between;
+}
+
+.friends-support-commons{
+  margin-right: -20rpx;
+  margin-top: 10rpx;
+  padding: 10rpx;
+  font-size: 24rpx;
+  line-height: 44rpx;
+  color: #2A2A2A;
+  background-color: #f5f5f5;
+  border-radius: 8rpx;
+}
+.friends-support-commons-item{
+  padding: 10rpx;
+  border-bottom: 1rpx solid #E7E7E7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.friends-support-commons:last-child{
+  border-bottom: none;
+}
+.common-friend-name{
+  font-weight: bold;
+}
+.icon-more_light{
+  font-weight: bold;
+  text-align: center;
+  color: #E41919;
+}
+
+.icon-appreciate_fill_light{
+  margin-right: 20rpx;
+}
+
+.friends-support-opt{
+  float: right;
+  color: #B0B0B0;
+  font-size: 24rpx;
+  font-family: Gobold;
+}
+
+.image-list{
+  padding: 20rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-list-item{
+  width: 170rpx;
+  height: 170rpx;
+  margin-right: 7rpx;
+  margin-bottom: 7rpx;
+}
+
+.post-dynamic{
+  position: fixed;
+  bottom: 100rpx;
+  right: 50rpx;
+  transition: all 0.4s ease-in-out;
+}
+.post-dynamic-show{
+  transform: rotate(360deg) scale(1);
+}
+.post-dynamic-hide{
+  transform: rotate(-360deg) scale(0);
+}
+.post-dynamic-btn{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #E41919;
+  border-radius: 50%;
+  box-shadow: 2rpx 5rpx 20rpx #FFF1F1;
+}
+
+.icon-camerafill{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 50rpx;
+}
