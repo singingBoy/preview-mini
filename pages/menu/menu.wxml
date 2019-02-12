@@ -1,2 +1,19 @@
-<view class="friends-wrapper">
-</view>
+<block>
+  <nav-bar background="{{navBarBackground}}" color="#fff" fixed="{{true}}">
+    <view slot="content" class="search-bar d-flex align-items-center" bindtap="navigateToSearch">
+      <view class="iconfont icon-search"/>
+      <swiper class="keys-list"
+              autoplay="{{true}}"
+              circular="{{true}}"
+              vertical="{{true}}"
+              bindchange="onKeyWordChange"
+      >
+        <swiper-item wx:for="{{searchKeys}}" wx:key="*this">{{item}}</swiper-item>
+      </swiper>
+    </view>
+  </nav-bar>
+  <view class="menu-banner" style="background-image: url('http://pic1.bbzhi.com/guanggaobizhi/meishicandianer/ad_menupan_02_62308_2.jpg')">
+
+  </view>
+  <image class="banner-bottom-ad" src="http://oss.huangye88.net/live/user/2305395/1498122011094096400-0.jpg" mode="aspectFill"/>
+</block>

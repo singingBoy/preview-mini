@@ -1,4 +1,4 @@
-<view class="friends-wrapper">
+<block>
   <nav-bar fixed="{{true}}">
     <view slot="content" class="d-flex align-items-center">
       <view bindtap="changeTab" data-tab="find" class="tab-title {{currentTab === 'find' ? 'tab-title-active' : ''}}">发现</view>
@@ -137,4 +137,4 @@
       <view class="iconfont icon-camerafill"></view>
     </view>
   </view>
-</view>
+</block>

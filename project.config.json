@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -64,6 +64,13 @@
 					"id": -1,
 					"name": "friends",
 					"pathName": "pages/friends/friends",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "menus",
+					"pathName": "pages/menu/menu",
 					"query": "",
 					"scene": null
 				}

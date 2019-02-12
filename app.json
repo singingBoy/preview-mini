@@ -8,6 +8,7 @@
     "pages/index/index",
     "pages/classify/classify",
     "pages/friends/friends",
+    "pages/menu/menu",
     "pages/me/me",
     "pages/search/search"
   ],
@@ -63,7 +64,7 @@
         "selectedIconPath": "images/icon_icecream_colour.png"
       },
       {
-        "pagePath": "pages/friends/friends",
+        "pagePath": "pages/menu/menu",
         "iconPath": "images/icon_salad_line.png",
         "selectedIconPath": "images/icon_salad_coloured.png"
       },

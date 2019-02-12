@@ -9,7 +9,7 @@
     <view class="search-tool d-flex align-items-center">
       <view class="iconfont icon-search" />
       <input class="search-input"
-             placeholder="请输入关键词"
+             placeholder="海鲜、菜谱？我都有！"
              auto-focus="{{true}}"
              bindconfirm="onSearch"
              bindinput="saveKeyword"

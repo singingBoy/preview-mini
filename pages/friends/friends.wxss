@@ -1,9 +1,6 @@
 page{
   background-color: #ffffff;
 }
-.friends-wrapper{
-
-}
 
 .tab-title{
   font-size: 32rpx;
@@ -183,7 +180,6 @@ page{
 
 .friends-support-commons{
   margin-right: -20rpx;
-  margin-top: 10rpx;
   padding: 10rpx;
   font-size: 24rpx;
   line-height: 44rpx;
@@ -192,7 +188,7 @@ page{
   border-radius: 8rpx;
 }
 .friends-support-commons-item{
-  padding: 10rpx;
+  padding: 15rpx;
   border-bottom: 1rpx solid #E7E7E7;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -1,3 +1,43 @@
-.friends-wrapper{
-
+page{
+  background-color: #ffffff;
 }
+/* 导航 */
+.search-bar{
+  width: 100%;
+  padding: 8rpx 16rpx;
+  border-radius: 32rpx;
+}
+.keys-list {
+  width: 100%;
+  height: 90rpx;
+  margin-left: 30rpx;
+}
+
+.menu-banner{
+  position: relative;
+  height: 650rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu-banner:after{
+  content: "";
+  width:100%;
+  height:100%;
+  position: absolute;
+  left:0;
+  top:0;
+  background: inherit;
+  filter: blur(2px);
+  z-index: 2;
+}
+
+.banner-bottom-ad{
+  width: 100%;
+  height: 120rpx;
+  background-color: #E41919;
+  border-top-left-radius: 50% 0;
+  border-top-right-radius: 50% 0;
+  border-bottom-right-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+}
+
